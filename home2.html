@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.0/examples/cover/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+    <title>Olá, dançarino</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./TEST_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./TEST_files/cover.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <nav class="nav nav-masthead justify-content-center">
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+          <img id="imgDance"/>
+        <h1 class="cover-heading">Esta é a sua dança:</h1>
+        <div>insira o gif aqui</div>
+        <p class="lead">
+          <a href="home2.html" class="btn btn-lg btn-secondary">Não gostei, troca!</a>
+        </p>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./TEST_files/jquery-3.2.1.slim.min.js.download" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./TEST_files/popper.min.js.download"></script>
+    <script src="./TEST_files/bootstrap.min.js.download"></script>
+    <script>
+        var imageUrls = ["images/1.gif", "images/2.gif", "images/3.gif", "images/4.gif", "images/5.gif"]; 
+        
+        var img = document.getElementById("imgDance");
+        
+        img.setAttribute("src", imageUrls[randomize()])
+        
+        function randomize() {
+          var range = imageUrls.length;
+          return Math.floor(Math.random() * range);
+        }
+    </script>
+
+</body></html>

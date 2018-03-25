@@ -1,0 +1,10 @@
+<img id="imgDance"/>
+<script>
+var imageUrls = ["images/1.gif", "images/2.gif", "images/3.gif", "images/4.gif", "images/5.gif"]; 
+var img = document.getElementById("imgDance");
+img.setAttribute("src", imageUrls[randomize()])
+function randomize() {
+  var range = imageUrls.length;
+  return Math.floor(Math.random() * range);
+}
+</script>

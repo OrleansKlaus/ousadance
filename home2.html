@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+    <link rel="icon" href="imgs\play-button.ico">
 
     <title>Olá, dançarino</title>
 
@@ -27,13 +27,22 @@
       </header>
 
       <main role="main" class="inner cover">
-          <img id="imgDance"/>
         <h1 class="cover-heading">Esta é a sua dança:</h1>
-        <div>insira o gif aqui</div>
-        <p class="lead">
-          <a href="home2.html" class="btn btn-lg btn-secondary">Não gostei, troca!</a>
-        </p>
       </main>
+
+      <div id="main" role="main" class="page-content">
+        <div class="quote-actions">
+          <button class="btn btn-lg btn-secondary" type="button">Não gostei, troca!</button>
+        </div>
+        <br>
+        <blockquote class="quote-content">
+            <div>
+                <img id="imgDance"/>
+                </div>
+        </blockquote>
+
+        </cite>
+      </div>
 
       <footer class="mastfoot mt-auto">
       </footer>
@@ -47,17 +56,7 @@
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="./TEST_files/popper.min.js.download"></script>
     <script src="./TEST_files/bootstrap.min.js.download"></script>
-    <script>
-        var imageUrls = ["images/1.gif", "images/2.gif", "images/3.gif", "images/4.gif", "images/5.gif"]; 
-        
-        var img = document.getElementById("imgDance");
-        
-        img.setAttribute("src", imageUrls[randomize()])
-        
-        function randomize() {
-          var range = imageUrls.length;
-          return Math.floor(Math.random() * range);
-        }
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="randomize.js"></script>
 
 </body></html>
